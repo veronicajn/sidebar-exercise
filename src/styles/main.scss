@@ -1,0 +1,83 @@
+@import "reset";
+$colorfondo: #434343;
+$letrascolor: white;
+
+
+
+
+
+  .imagenes{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+  }
+  
+  
+  .bloque-menu{
+    width: 300px;
+    height: 336px;
+    background-color: $colorfondo;
+    color: $letrascolor;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  
+  .img-menu{
+    @extend .imagenes;
+   
+    
+  }
+  .bloque--menu{
+    color: $letrascolor;
+    text-decoration:none;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 22px;
+  }
+  
+  .img-menu,
+      .w3-button{
+            font-size: 20px;
+            padding: 10px;
+            padding: 0px;
+            margin-top: 10px;
+            margin-left: 20px;
+  }
+  
+  .bloque{
+    border-top: 2px solid black ;
+    padding: 0px;
+    height: 43px;
+   
+  }
+  .bloque:hover {
+    background-color: grey;
+    transition:  1s;
+    border-left: solid green 7px;
+  }
+  
+
+
+  @media only screen and (min-width: 900px) {
+    h3{
+      display: none;
+    }
+    .bloque-menu{
+      width: 1207px;
+      display: flex;
+      height: 46px;
+    }
+    .bloque{
+      width: 200px;
+      border-left: solid black 1px;
+    }
+    .img-menu,
+    .w3-button{
+          font-size: 25px;
+          padding: 10px;
+          padding: 0px;
+          margin-top: 10px;
+          margin-left: 20px;
+}
+    }
